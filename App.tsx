@@ -1,9 +1,9 @@
-import {StyleSheet, Text, View} from 'react-native';
+import Navigation from '@navigation/Navigation';
 import React from 'react';
-import SplashScreen from '@navigation/SplashScreen';
+import {StyleSheet} from 'react-native';
 
 export default function App() {
-  return <SplashScreen />;
+  return <Navigation />;
 }
 
 const styles = StyleSheet.create({});
