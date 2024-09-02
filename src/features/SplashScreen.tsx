@@ -1,3 +1,4 @@
+import CustomText from '@components/ui/CustomText';
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
@@ -5,9 +6,7 @@ import Icon from 'react-native-vector-icons/AntDesign';
 export default function SplashScreen() {
   return (
     <View style={styles.container}>
-      <Text style={{fontFamily: 'Bangers-Regular', color: 'coral'}}>
-        Beymax Welcomes you to splash screen
-      </Text>
+      <CustomText variant="h2">Beymax Welcomes you to splash screen</CustomText>
       <Icon name="checkcircle" size={30} color={'teal'} />
     </View>
   );
