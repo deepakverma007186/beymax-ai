@@ -1,3 +1,5 @@
+import AlbumGallery from '@features/AlbumGallery';
+import ShowAlbum from '@features/ShowAlbum';
 import SplashScreen from '@features/SplashScreen';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -11,11 +13,13 @@ export default function Navigation() {
   return (
     <NavigationContainer ref={navigationRef}>
       <Stack.Navigator
-        initialRouteName="SplashScreen"
+        initialRouteName="ShowAlbum"
         screenOptions={{
           headerShown: false,
         }}>
         <Stack.Screen name="SplashScreen" component={SplashScreen} />
+        <Stack.Screen name="ShowAlbum" component={ShowAlbum} />
+        <Stack.Screen name="AlbumGallery" component={AlbumGallery} />
       </Stack.Navigator>
     </NavigationContainer>
   );
